@@ -3,31 +3,41 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/style.css" />
-    <title>Practical-8</title>
+    <link rel="stylesheet" href="../css/style9.css" />
+    <title>Practical-9</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
     <div class="container">
       <div id="header">
-        <ul>
-          <li><a href="#">HOME</a></li>
-          <li><a href="#section2">ABOUT US</a></li>
-          <li><a href="#section-1">TEAM</a></li>
-          <li><a href="#cards">TECHNOLOGIES</a></li>
-          <li><a href="#section-4">CONTACT</a></li>
+        <label class="logo">Design</label>
+          <input type="checkbox" id="check">
+          <label for="check" class="checkbtn">
+            <i class="fa fa-bars"></i>
+          </label>
+        <ul class="menu">
+          <li><a href="#">home</a></li>
+          <li><a href="#section2">about us</a></li>
+          <li><a href="#section-1">team</a></li>
+          <li><a href="#cards">technologies</a></li>
+          <li><a href="#section-4">contact</a></li>
+          <label for="check" class="hide-btn">
+            <i class="fa fa-times"></i>
+          </label>
         </ul>
       </div>
       <div id="banner">
-        <h2>practical - 8</h2>
+        <h2>practical - 9</h2>
       </div>
 
       <div id="section-1">
         <h1>team members</h1>
-        <div class="circle"><img src="../images/1.png" alt="" /></div>
-        <div class="circle"><img src="../images/2.png" alt="" /></div>
-        <div class="circle"><img src="../images/3.png" alt="" /></div>
-        <div class="circle"><img src="../images/4.png" alt="" /></div>
+        <div class="circle" id="circle1" ><img src="../images/1.png" alt="" /></div>
+        <div class="circle" id="circle2" ><img src="../images/2.png" alt="" /></div>
+        <div class="circle" id="circle3" ><img src="../images/3.png" alt="" /></div>
+        <div class="circle" id="circle4" ><img src="../images/4.png" alt="" /></div>
       </div>
+     
 
       <h1>About Us</h1>
       <div id="section2">
@@ -75,7 +85,7 @@
 
       <div id="cards">
         <h1>Technologies Used</h1>
-        <div class="main">
+        <div class="main" id="card1">
           <div class="box">
             <img src="../images/htmlShow.png" alt="" />
           </div>
@@ -90,7 +100,7 @@
           </div>
         </div>
 
-        <div class="main">
+        <div class="main" id="card2">
           <div class="box">
             <img src="../images/cssShow.jpg" alt="" />
           </div>
@@ -105,7 +115,7 @@
           </div>
         </div>
 
-        <div class="main">
+        <div class="main" id="card3">
           <div class="box">
             <img src="../images/jsShow.jpeg" alt="" />
           </div>
@@ -120,7 +130,7 @@
           </div>
         </div>
 
-        <div class="main">
+        <div class="main" id="card4">
           <div class="box">
             <img src="../images/bootShow.jpg" alt="" />
           </div>
