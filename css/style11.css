@@ -17,10 +17,13 @@ table,
 tr,
 td {
   border-bottom: 1px solid gray;
-  border-spacing: 10px;
-  border-collapse: collapse;
+  border-spacing: 0px;
+  border-collapse: separate;
   padding: 11px;
   font-size: 20px;
+}
+th{
+  border-bottom: 1px solid gray;
 }
 tr,
 th {
@@ -33,6 +36,10 @@ table tr td:nth-child(4) {
   color: green;
   margin: 0 45px;
 }
+tr:last-child td{
+  border: none;
+}
+
 a {
   text-decoration: none;
   color: rgba(128, 128, 128, 0.973);
@@ -45,8 +52,10 @@ table {
   width: 950px;
   margin: 20px auto;
   margin-top: 0px;
-  border: 2px solid black;
+  border: 2px solid black;  
   border-top: 0;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 
 h4 {
