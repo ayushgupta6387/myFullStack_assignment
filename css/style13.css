@@ -3,6 +3,9 @@
   margin: 0;
   box-sizing: border-box;
 }
+body{
+  min-width: 328px;
+}
 .first {
   margin-top: 20px;
 }
@@ -15,6 +18,7 @@
 }
 footer {
   background-color: #3f3f3f;
+
 }
 .section-1 {
   color: white;
