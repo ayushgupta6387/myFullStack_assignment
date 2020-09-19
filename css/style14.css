@@ -1,0 +1,302 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  min-width: 310px;
+}
+h1 {
+  padding-top: 20px;
+  text-align: center;
+  font-size: 4vw;
+  text-transform: uppercase;
+  color: red;
+  font-family: arial;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 30px;
+}
+.box {
+  width: 25%;
+  box-shadow: 2px 2px 2px 2px lightgray;
+  border-radius: 4px;
+}
+.card1 .part1 {
+  border-radius: 3px;
+  text-align: center;
+  background: linear-gradient(to bottom left, red, yellow);
+}
+.card1 .part1 p,
+i {
+  padding: 13px;
+  font-size: 2vw;
+  color: white;
+}
+form {
+  margin-top: 30px;
+}
+input,
+label {
+  margin-left: 20px;
+  margin-bottom: 15px;
+}
+input[type="email"] {
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 1px solid gray;
+  padding-top: 4px;
+  display: block;
+}
+
+input[type="password"] {
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 1px solid gray;
+
+  display: block;
+}
+label {
+  color: darkgray;
+/* font-weight: bold; */
+font-weight: 600;
+/* font-family: arial; */
+}
+form .forgot {
+  color: gray;
+  float: right;
+  margin-top: 10px;
+  margin-right: 15px;
+  font-size: 14px;
+}
+button {
+  display: inline-block;
+  margin-top: 60px;
+  width: 90px;
+  height: 40px;
+  color: white;
+  border-radius: 50px;
+  background: gray;
+  margin-left: 10px;
+  cursor: pointer;
+  border: 0;
+}
+button:hover {
+  background-color: green;
+}
+form .dont {
+  color: gray;
+  font-size: 14px;
+  float: right;
+  margin-right: 15px;
+
+  margin-bottom: 55px;
+}
+label .password {
+  margin-top: 123px;
+}
+.card1 span {
+  color: black;
+  font-weight: bold;
+}
+
+/* card2 */
+.card2 .part1 p {
+  text-align: center;
+  padding: 13px;
+  font-size: 2vw;
+}
+
+.card2 .part2 {
+  position: absolute;
+  /* color: black; */
+  margin-top: 23px;
+  margin-bottom: 230px;
+  background-color: #ff8000;
+  /* flex-direction: column;    */
+  display: flex;
+  justify-content: center;
+  /* vertical-align: center; */
+  /* display: table; */
+  color: white;
+  /* height: 9vh; */
+  border-radius: 3px;
+  width: 25%;
+}
+.card2 .part2 i {
+  margin-top: 8px;
+}
+.card2 .accept {
+  margin-top: -30px;
+  margin-left: 37px;
+}
+.card2 .accept1 {
+  margin-top: 20px;
+}
+form .dont2 {
+  color: gray;
+  font-size: 14px;
+  float: right;
+  margin-right: 15px;
+
+  margin-top: 74px;
+}
+.card2 .part2 {
+  background: linear-gradient(
+    to bottom left,
+    rgb(207, 113, 113),
+    rgb(224, 120, 88)
+  );
+}
+.card2 .part1 p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: rgb(201, 28, 86);
+}
+.card2 .accept span {
+  color: blue;
+}
+.card2 .dont2 span {
+  font-weight: bolder;
+  color: blue;
+}
+.card2 button {
+  color: white;
+  background-color: rgb(206, 23, 206);
+  width: 120px;
+}
+
+/* card3 */
+.card3 .part1 p {
+  text-align: center;
+  padding: 13px;
+  font-size: 2vw;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+}
+.card3 button {
+  margin-top: 0;
+
+  width: 90%;
+  background: linear-gradient(to bottom left, red, pink);
+}
+.card3 p {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+.card3 .part2 {
+  color: blue;
+
+  display: flex;
+  justify-content: center;
+
+  border-radius: 3px;
+}
+.card3 i {
+  margin: 5px;
+
+  padding: 12px 23px;
+  border-radius: 30%;
+  box-shadow: 1px 1px 1px 1px rgb(132, 132, 231);
+  color: blue;
+}
+.card3 .forgot {
+  color: rgb(23, 23, 223);
+}
+i:hover{
+  cursor: pointer;
+}
+input:focus{
+  /* background-color: red; */
+  /* border: none; */
+  border-bottom: 1.5px solid blue;
+  outline-width: 0;
+}
+.card1 input:focus + label {
+  color: blue;
+}
+label{
+  margin-top: -50px;
+}
+form > .top {
+  position: relative;
+}
+form > .top > label {
+  position: absolute;
+}
+.pass1{
+  margin-top: 40px;
+}
+/* .pass2{
+  margin-top: -90px;
+} */
+/* label {
+  transform: translate(0, -30px);
+  color: green;
+} */
+
+
+@media (max-width: 600px) {
+  .container {
+    display: block;
+
+    width: 100%;
+    padding-left: 15px;
+  }
+  .box {
+    width: 95%;
+    overflow: hidden;
+    margin-bottom: 40px;
+  }
+  .card1 .part1 p {
+    font-size: 8vw;
+  }
+  .card2 .part1 p {
+    font-size: 8vw;
+  }
+  .card3 .part1 p {
+    font-size: 8vw;
+  }
+
+  .card2 .part2 {
+    display: flex;
+
+    justify-content: center;
+    color: white;
+    margin-top: 60px;
+    width: 35%;
+  }
+  .card2 .part2 i {
+    margin-top: 0;
+  }
+  .card2 button {
+    width: 90px;
+    margin-bottom: 20px;
+    float: right;
+    margin-right: 7px;
+  }
+  form .dont2 {
+    color: gray;
+    font-size: 14px;
+    float: right;
+    margin-right: 15px;
+    margin-top: 0px;
+  }
+  .card2 .accept {
+    margin-top: -30px;
+    margin-left: 37px;
+  }
+  .card2 .accept1 {
+    margin-top: 0px;
+  }
+  h1 {
+    font-size: 8vw;
+  }
+}
