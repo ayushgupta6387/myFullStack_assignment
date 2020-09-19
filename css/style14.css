@@ -63,9 +63,7 @@ input[type="password"] {
 }
 label {
   color: darkgray;
-/* font-weight: bold; */
-font-weight: 600;
-/* font-family: arial; */
+  font-weight: 600;
 }
 form .forgot {
   color: gray;
@@ -114,17 +112,12 @@ label .password {
 
 .card2 .part2 {
   position: absolute;
-  /* color: black; */
   margin-top: 23px;
   margin-bottom: 230px;
   background-color: #ff8000;
-  /* flex-direction: column;    */
   display: flex;
   justify-content: center;
-  /* vertical-align: center; */
-  /* display: table; */
   color: white;
-  /* height: 9vh; */
   border-radius: 3px;
   width: 25%;
 }
@@ -210,19 +203,17 @@ form .dont2 {
 .card3 .forgot {
   color: rgb(23, 23, 223);
 }
-i:hover{
+i:hover {
   cursor: pointer;
 }
-input:focus{
-  /* background-color: red; */
-  /* border: none; */
+input:focus {
   border-bottom: 1.5px solid blue;
   outline-width: 0;
 }
 .card1 input:focus + label {
   color: blue;
 }
-label{
+label {
   margin-top: -50px;
 }
 form > .top {
@@ -231,17 +222,9 @@ form > .top {
 form > .top > label {
   position: absolute;
 }
-.pass1{
+.pass1 {
   margin-top: 40px;
 }
-/* .pass2{
-  margin-top: -90px;
-} */
-/* label {
-  transform: translate(0, -30px);
-  color: green;
-} */
-
 
 @media (max-width: 600px) {
   .container {
