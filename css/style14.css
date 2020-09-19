@@ -75,7 +75,6 @@ form .forgot {
 button {
   display: inline-block;
   margin-top: 60px;
-  width: 90px;
   height: 40px;
   color: white;
   border-radius: 50px;
@@ -84,6 +83,10 @@ button {
   cursor: pointer;
   border: 0;
 }
+.card1 button {
+  width: 140px;
+  background: linear-gradient(to left, yellow, blue);
+}
 button:hover {
   background-color: green;
 }
@@ -91,6 +94,7 @@ form .dont {
   color: gray;
   font-size: 14px;
   float: right;
+  margin-top: 5px;
   margin-right: 15px;
 
   margin-bottom: 55px;
@@ -120,9 +124,10 @@ label .password {
   color: white;
   border-radius: 3px;
   width: 25%;
+  height: 7vh;
 }
 .card2 .part2 i {
-  margin-top: 8px;
+  margin-top: 4px;
 }
 .card2 .accept {
   margin-top: -30px;
@@ -136,7 +141,6 @@ form .dont2 {
   font-size: 14px;
   float: right;
   margin-right: 15px;
-
   margin-top: 74px;
 }
 .card2 .part2 {
