@@ -28,6 +28,8 @@ h1 {
 .card1 .part1 {
   border-radius: 3px;
   text-align: center;
+  font-family: arial;
+  font-weight: bold;
   background: linear-gradient(to bottom left, red, yellow);
 }
 .card1 .part1 p,
@@ -94,9 +96,8 @@ form .dont {
   color: gray;
   font-size: 14px;
   float: right;
-  margin-top: 5px;
+  padding-top: 8px;
   margin-right: 15px;
-
   margin-bottom: 55px;
 }
 label .password {
