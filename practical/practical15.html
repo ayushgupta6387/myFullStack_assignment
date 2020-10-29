@@ -52,8 +52,13 @@
 
       btn1.addEventListener("click", sub);
       function sub() {
-        counter--;
-        display.innerHTML = counter;
+          if(counter < 0 ){
+              btn1.disabled = true;
+            }
+            if(counter > 0){
+            counter--;
+            display.innerHTML = counter;
+            }
       }
 
     </script>
