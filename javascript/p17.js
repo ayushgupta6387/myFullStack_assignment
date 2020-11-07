@@ -46,10 +46,10 @@ function setGreeting(){
         document.body.style.color = 'white';
         time.style.color="red";
     }else if (hour<18){
-        document.body.style.backgroundImage = 'url("/images/afternoon1.jpg")';
+        document.body.style.backgroundImage = 'url("../images/afternoon1.jpg")';
         greeting.innerHTML = 'Good Afternoon'
     }else{
-        document.body.style.backgroundImage = 'url("/images/dark1.jpg")';
+        document.body.style.backgroundImage = 'url("../images/dark1.jpg")';
         greeting.innerHTML = 'Good Evening'
         document.body.style.color = 'white'; 
     }
