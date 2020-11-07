@@ -36,22 +36,20 @@ function addZero(n){
 }
 }
 function setGreeting(){
-    let today = new Date();
+    let today = new Date(20, 12, 12, 10, 12, 12);
     let hour = today.getHours();  //17
 
     if (hour<12) {
-        document.body.style.backgroundImage = 'url("images/morning1.jpg")';
+        document.body.style.backgroundImage = 'url("../images/morning1.jpg")';
         greeting.innerHTML = 'Good Morning'
-        time.style.color="red"
         time.style.fontFamily="cursive"
-        greeting.style.color = 'white'; 
-        name.style.color = 'white'; 
-        date.style.color = 'white'; 
+        document.body.style.color = 'white';
+        time.style.color="red";
     }else if (hour<18){
-        document.body.style.backgroundImage = 'url("images/afternoon1.jpg")';
+        document.body.style.backgroundImage = 'url("/images/afternoon1.jpg")';
         greeting.innerHTML = 'Good Afternoon'
     }else{
-        document.body.style.backgroundImage = 'url("images/dark1.jpg")';
+        document.body.style.backgroundImage = 'url("/images/dark1.jpg")';
         greeting.innerHTML = 'Good Evening'
         document.body.style.color = 'white'; 
     }
