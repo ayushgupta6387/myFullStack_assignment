@@ -36,7 +36,7 @@ function addZero(n){
 }
 }
 function setGreeting(){
-    let today = new Date(20, 12, 12, 10, 12, 12);
+    let today = new Date();
     let hour = today.getHours();  //17
 
     if (hour<12) {
