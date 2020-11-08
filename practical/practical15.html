@@ -46,8 +46,8 @@
 
       btn2.addEventListener("click", addition);
       function addition() {
-        if(counter >= 0){
-        btn1.disabled = false;
+        if (counter >= 0) {
+          btn1.disabled = false;
         }
         counter++;
         display.innerHTML = counter;
@@ -55,15 +55,14 @@
 
       btn1.addEventListener("click", sub);
       function sub() {
-          if(counter <= 1 ){
-              btn1.disabled = true;
-            }
-            if(counter >= 1){
-            counter--;
-            display.innerHTML = counter;
-            }
+        if (counter <= 1) {
+          btn1.disabled = true;
+        }
+        if (counter >= 1) {
+          counter--;
+          display.innerHTML = counter;
+        }
       }
-
     </script>
   </body>
 </html>
