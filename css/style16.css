@@ -76,6 +76,9 @@ form button:hover {
 .fa-delete {
   pointer-events: none;
 }
+i{
+  pointer-events: none;
+}
 
 .completed {
   opacity: 0.5;
