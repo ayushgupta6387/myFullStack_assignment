@@ -17,7 +17,7 @@ function showTime() {
   let todayDate = today.toDateString();
 
   // am pm
-  const amPm = hour > 12 ? "PM" : "AM";
+  const amPm = hour >= 12 ? "PM" : "AM";
 
   // 12hrs format
   // eg when 24%12
