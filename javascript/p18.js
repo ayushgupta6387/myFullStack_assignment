@@ -18,11 +18,16 @@ form.addEventListener('submit', function(e){
      const emailvalue = email.value.trim();
      const password1value = password1.value;
      const password2value = password2.value;
+     
     if (usernamevalue === "") {
         showError(username, "Username can not be blank");
-    }else{
+    }else if(!isUserNameValid(usernamevalue)){
+        showError(username, "Username is not valid")
+    }
+    else{
         showSuccess(username);
     }
+
     if (emailvalue === "") {
         showError(email, "Email can not be blank");
     }else if(!isEmailValid(emailvalue)){
@@ -59,6 +64,9 @@ form.addEventListener('submit', function(e){
      
  }
 
- function isEmailValid(email){
-     return /([a-zA-Z0-9_\.\-]+)@([a-zA-Z0-9]+)\.([a-zA-Z]{2,3})$/.test(email)
+ function isEmailValid(emailvalue){
+     return /([a-zA-Z0-9_\.\-]+)@([a-zA-Z0-9]+)\.([a-zA-Z]{2,3})$/.test(emailvalue)
+ }
+ function isUserNameValid(usernamevalue){
+     return /([a-z]{1,})/.test(usernamevalue)
  }
